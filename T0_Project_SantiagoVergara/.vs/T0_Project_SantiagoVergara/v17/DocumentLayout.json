@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D6D3D42-7E79-488D-A845-9853B4718C87}|T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj|c:\\users\\jmmte\\onedrive\\escritorio\\santiago\\itb\\proyecto\\review_one\\t0_project_santiagovergara\\t0_project_santiagovergara\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D6D3D42-7E79-488D-A845-9853B4718C87}|T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj|solutionrelative:t0_project_santiagovergara\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\Program.cs",
+              "RelativeDocumentMoniker": "T0_Project_SantiagoVergara\\Program.cs",
+              "ToolTip": "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\Program.cs",
+              "RelativeToolTip": "T0_Project_SantiagoVergara\\Program.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:45:44.995Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
