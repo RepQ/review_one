@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\argo\\Desktop\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj": {}
+    "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj": {}
   },
   "projects": {
-    "C:\\Users\\argo\\Desktop\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj": {
+    "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\argo\\Desktop\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj",
+        "projectUniqueName": "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj",
         "projectName": "T0_Project_SantiagoVergara",
-        "projectPath": "C:\\Users\\argo\\Desktop\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj",
-        "packagesPath": "C:\\Users\\argo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\argo\\Desktop\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\obj\\",
+        "projectPath": "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara.csproj",
+        "packagesPath": "C:\\Users\\jmmte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jmmte\\OneDrive\\Escritorio\\SANTIAGO\\ITB\\Proyecto\\review_one\\T0_Project_SantiagoVergara\\T0_Project_SantiagoVergara\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\argo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jmmte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,12 +59,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x86",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
