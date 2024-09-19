@@ -1,33 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
-class Program
+
+public class Constantes
+{
+    static public String APROBADO = "Aprobado";
+    static public String SUSPENDIDO = "Suspendido";
+    static public String PROMEDIO = "El promedio de las notas es: ";
+    static public String CALIFICACION = "Introduzca la calificacion # ";
+    static public String CONTINUE_MENSAJE = "Presione 0 para continuar, cualquier otra para terminar: ";
+    static public String INGRE_CIUDAD = "Ingrese el nombre de la ciudad: ";
+    static public String INGRE_COD_POSTAL = "Ingrese el codigo postal de la Ciudad";
+    static public float MINIMO_PROMEDIO = 6;
+}
+public class Program
 {
     //Funcion encargada de calcular el promedio de las notas
-    public static void Promig(int[] notas)
+    public static void Promig(List<int> notas)
     {
-        int suma;
         float promig;
 
-        suma = notas[0] + notas[1] + notas[2];
-        promig = (float)suma / 3;
-        Console.WriteLine("El promig de les notes es: " + promig);
-        if (promig >= 6)
-            Console.WriteLine("Aprovat");
+        promig = (float)notas.Average();
+        Console.WriteLine(Constantes.PROMEDIO + promig);
+        if (promig >= Constantes.MINIMO_PROMEDIO)
+            Console.WriteLine(Constantes.APROBADO);
         else
-            Console.WriteLine("Suspés");
+            Console.WriteLine(Constantes.SUSPENDIDO);
     }
 
     //Funcion encargada de obtener las 3 calificaciones
-    public static void Qualificacion(int[] notas)
+    public static void Qualificacion(List<int> notas)
     {
-        Console.WriteLine("Introdueix la primera qualificació");
-        notas[0] = Convert.ToInt32(Console.ReadLine());
+        int i;
+        bool stop;
 
-        Console.WriteLine("Introdueix la segona qualificació: ");
-        notas[1] = Convert.ToInt32(Console.ReadLine());
-
-        Console.WriteLine("Introdueix la tercera qualificació: ");
-        notas[2] = Convert.ToInt32(Console.ReadLine());
+        i = 0;
+        stop = false;
+        while (!stop)
+        {
+            Console.WriteLine(Constantes.CALIFICACION + (i + 1));
+            int note = Convert.ToInt32(Console.ReadLine());
+            notas.Add(note);
+            Console.WriteLine(Constantes.CONTINUE_MENSAJE);
+            if (Convert.ToInt32(Console.ReadLine()) != 0)
+                stop = true;
+            i++;
+            Console.Clear();
+        }
     }
 
     //Funcion encargada de Obtener las ciudades y sus respectivos codigos postales
@@ -40,14 +58,15 @@ class Program
         Cities = new Dictionary<string, int>();
         do
         {
-            Console.WriteLine($"Ingrese el nombre de la ciudad: ");
+            Console.WriteLine(Constantes.INGRE_CIUDAD);
             String City = Console.ReadLine();
-            Console.WriteLine($"Ingrese el codigo postal de la Ciudad {City}: ");
+            Console.WriteLine(Constantes.INGRE_COD_POSTAL);
             int CityPostal = Convert.ToInt32(Console.ReadLine());
             Cities.Add(City, CityPostal);
-            Console.WriteLine("Presione 0 para continuar, cualquier otra tecla para parar: ");
+            Console.WriteLine(Constantes.CONTINUE_MENSAJE);
             if (Convert.ToInt32(Console.ReadLine()) != 0)
                 stop = true;
+            Console.Clear();
         }
         while (!stop);
 
@@ -61,18 +80,17 @@ class Program
         {
             Console.WriteLine($"Ciudad: {entry.Key} - Codigo Postal {entry.Value}");
         }
+        Console.WriteLine("Presione Cualquier tecla para continuar: ");
+        Console.ReadLine();
+        Console.Clear();
     }
     static void Main(string[] args)
     {
-        //Array de notas tipo int
-        int[] notas;
+        List<int> notas;
 
-        //Creacion del array
-        notas = new int[3];
-
-        //Llamado a funciones
+        notas = new List<int>();
         Cities();
-        Qualificacion (notas);
+        Qualificacion(notas);
         Promig(notas);
     }
 }
